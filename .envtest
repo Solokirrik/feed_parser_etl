@@ -6,4 +6,4 @@ DJANGO_SU_NAME=test
 DJANGO_SU_EMAIL=test@temail.com
 DJANGO_SU_PASS=testpass
 LOGGING_HANDLERS=console
-DEBUG=True
+DEBUG=1

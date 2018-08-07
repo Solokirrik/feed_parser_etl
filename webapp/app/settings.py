@@ -9,7 +9,7 @@ if not os.path.exists(LOGS_DIR):
 
 SECRET_KEY = 'fx%*66s_ab6yle3zh43^uk2bj1dwg%!@ku4l5x)@q)*i0h_$rn'
 
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = bool(int(os.getenv('DEBUG', '0')))
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
