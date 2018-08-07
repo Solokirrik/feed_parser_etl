@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./webapp:/opt/webapp
+      - ./bin:/opt/webapp/scripts
+    depends_on:
+      - db
+    command: sh /opt/webapp/scripts/docker-entrypoint.sh
+
+  db:
+    image: postgres
+    env_file:
+      - .env
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"
+
+volumes:
+  db_data:

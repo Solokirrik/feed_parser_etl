@@ -1,0 +1,31 @@
+.DS_Store
+.idea/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+cover/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+cover/
+
+#Django
+*.pyc
+*~
+*.db
+
+# Django stuff:
+*.log
+/webapp/static/
+*/media/
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+.cache
+coverage.xml
+.pytest*

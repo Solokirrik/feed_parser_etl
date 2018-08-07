@@ -1,0 +1,9 @@
+POSTGRES_HOST=db
+POSTGRES_DB=testproject
+POSTGRES_USER=docker
+POSTGRES_PASSWORD=password
+DJANGO_SU_NAME=test
+DJANGO_SU_EMAIL=test@temail.com
+DJANGO_SU_PASS=testpass
+LOGGING_HANDLERS=console
+DEBUG=True
