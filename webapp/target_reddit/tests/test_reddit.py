@@ -1,9 +1,9 @@
-from django.utils.crypto import get_random_string
+import pytz
 from random import randint
 from datetime import datetime
-import pytest
-import pytz
 from unittest.mock import patch
+import pytest
+from django.utils.crypto import get_random_string
 from target_reddit.reddit import RedditTransformer
 
 
